@@ -1,0 +1,559 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", Arial, sans-serif;
+}
+/* Navigation bar style */
+.navbar {
+  width: 100%;
+  background-color: #fff8f8;
+  height: 60px;
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.tab a {
+  text-decoration: none;
+  color: black;
+}
+
+.tab a:visited {
+  color: black;
+}
+
+.tab a:hover {
+  color: #f77f00;
+}
+
+.burger-btn {
+  display: none;
+}
+
+#logo {
+  height: 50px;
+}
+
+.main-page {
+  background-image: url(https://t3.ftcdn.net/jpg/02/77/97/42/360_F_277974260_zfjOrxUn9CGtHKKZboWVKaJa12XlJGJ8.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.main-page::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.main-page-description {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+  text-align: center;
+  color: white;
+}
+
+.main-page-description h1 {
+  font-size: 60px;
+  margin-bottom: 5px;
+}
+
+.main-page-description h3 {
+  font-size: 25px;
+  margin-top: 5px;
+  line-height: 1.8;
+}
+
+/* Restaurant History */
+.restaurant-history {
+  margin: 0 150px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+  padding: 70px 0;
+}
+
+.restaurant-history-img img {
+  width: 100%;
+}
+
+.restaurant-history-content {
+  width: 100%;
+}
+
+.restaurant-history-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.restaurant-history-content p {
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #999999;
+}
+
+/* Choose us */
+.choose-us-container {
+  margin: 0 150px;
+  padding: 70px 0;
+}
+
+.choose-us-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.choose-us-description p {
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #999999;
+  margin-bottom: 20px;
+}
+
+.choose-us-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.choose-us-qualities {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.choose-us-card {
+  width: 70%;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.choose-card-us-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fdb44b;
+}
+
+.choose-us-card-content {
+  color: #999999;
+  font-size: 18px;
+}
+
+/* Restaurant Chefs */
+.restaurant-chefs-container {
+  margin: 0 150px;
+  padding: 70px 0;
+}
+
+.restaurant-chefs-title {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.restaurant-chefs-description p {
+  font-size: 18px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #999999;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.restaurant-chef-card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+.restaurant-chefs-card {
+  width: 100%;
+  border: 1px solid #e6e6e6;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.chefs-card-image img {
+  width: 210px;
+  height: 210px;
+  margin-bottom: 16px;
+}
+
+.chefs-card-name {
+  font-size: 28px;
+  margin-bottom: 16px;
+  font-family: "Playfair Display", Arial, sans-serif;
+}
+
+.chefs-card-profile {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #999999;
+  margin: 0 20px;
+}
+
+/* Footer */
+.footer-container {
+  padding: 70px 150px 20px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #eaf4f4;
+}
+
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  background-color: #eaf4f4;
+  gap: 50px;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.footer-title p {
+  margin: 0;
+}
+
+.aboutme-footer p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #888a8e;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.working-hours {
+  font-size: 18px;
+  color: #a99e9c;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.quick-links-tabs ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.quick-links-tab a {
+  font-size: 18px;
+  color: #f9965c;
+  text-decoration: none;
+}
+
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.subscribe-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #888a8e;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.subscribe-email {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#subscribe {
+  padding: 10px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 0 !important;
+  padding-right: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#send-email {
+  background-color: #fdb44b;
+  border-color: #fdb44b;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.675rem 1.2rem;
+}
+
+#send-email:hover {
+  background-color: #fec97d;
+  border-color: #fec97d;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.contact-info {
+  font-size: 18px;
+  color: #888a8e;
+  text-decoration: none;
+}
+
+.contact-info a {
+  text-decoration: none;
+}
+
+.contact-info a span {
+  font-size: 16px;
+  color: #888a8e;
+  text-decoration: none;
+}
+
+#phone {
+  font-size: 22px;
+}
+
+.copyright {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 16px;
+  color: #888a8e;
+}
+
+/* Responsive design */
+@media screen and (max-width: 1200px) {
+  .navbar {
+    padding: 0 100px;
+  }
+
+  .main-page-description h3 {
+    margin: 5px 100px;
+  }
+
+  .restaurant-history {
+    margin: 0 100px;
+  }
+
+  .choose-us-container {
+    margin: 0 100px;
+  }
+
+  .choose-us-image img {
+    width: 100%;
+  }
+
+  .restaurant-chefs-container {
+    margin: 0 100px;
+  }
+
+  .restaurant-chef-card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .navbar {
+    padding: 0 70px;
+  }
+
+  .tabs {
+    display: none;
+  }
+
+  .burger-btn {
+    display: block;
+    margin-left: 55%;
+    margin-right: 20px;
+  }
+
+  .burger-btn:hover {
+    cursor: pointer;
+  }
+
+  .burger-btn img {
+    width: 40px;
+  }
+
+  .main-page-description h3 {
+    margin: 5px 70px;
+  }
+
+  .choose-us-container {
+    margin: 0 70px;
+  }
+
+  .choose-us-content {
+    grid-template-columns: 1fr;
+  }
+
+  .choose-us-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .choose-us-qualities {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 30px;
+  }
+
+  .restaurant-history {
+    margin: 0 70px;
+  }
+
+  .choose-us-content {
+    grid-template-columns: 1fr;
+  }
+
+  .restaurant-chefs-container {
+    margin: 0 70px;
+  }
+
+  .footer-container {
+    padding: 50px 70px 20px 70px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .burger-btn {
+    margin-left: 50%;
+  }
+
+  .main-page-description h1 {
+    font-size: 48px;
+  }
+
+  .main-page-description h3 {
+    font-size: 20px;
+  }
+
+  .restaurant-history {
+    grid-template-columns: 1fr;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .burger-btn {
+    margin-left: 30%;
+  }
+
+  .choose-us-qualities {
+    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .restaurant-chef-card-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    padding: 0 30px;
+  }
+
+  .main-page-description h1 {
+    font-size: 40px;
+  }
+
+  .main-page-description h3 {
+    font-size: 18px;
+  }
+
+  .restaurant-history {
+    margin: 0 30px;
+  }
+
+  .choose-us-container {
+    margin: 0 30px;
+  }
+
+  .restaurant-chefs-container {
+    margin: 0 30px;
+  }
+
+  .footer-container {
+    padding: 50px 30px 20px 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    padding: 0 10px;
+  }
+}

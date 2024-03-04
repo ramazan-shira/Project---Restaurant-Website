@@ -1,0 +1,823 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Navigation bar style */
+.navbar {
+  width: 100%;
+  background-color: #fff8f8;
+  height: 60px;
+  padding: 0 150px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  box-shadow: 0 4px 15px -5px rgba(0, 0, 0, 0.1);
+}
+
+.tabs {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.tab a {
+  text-decoration: none;
+  color: black;
+}
+
+.tab a:visited {
+  color: black;
+}
+
+.tab a:hover {
+  color: #f77f00;
+}
+
+.burger-btn {
+  display: none;
+}
+
+#logo {
+  height: 50px;
+}
+
+.main-page {
+  background-image: url(https://www.spectator.co.uk/wp-content/uploads/2023/01/iStock-1081422898.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.main-page::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.main-page-description {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+  text-align: center;
+  color: white;
+}
+
+.main-page-description h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.main-page-description h3 {
+  font-size: 25px;
+  margin-top: 5px;
+}
+
+/* Qualities */
+.qualities-container {
+  padding: 50px 0;
+  margin: 0 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.quality-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quality-card-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: relative;
+  background-color: #fdb44b;
+  margin-bottom: 20px;
+}
+
+.quality-card-image img {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  width: 50px;
+  height: 50px;
+}
+
+.quality-card-title {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.quality-card-description {
+  font-size: 18px;
+  color: #999999;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* Specialties */
+.specialties-container {
+  padding: 50px 0;
+}
+
+.specialties-title {
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.specialties-description {
+  font-size: 20px;
+  color: #999999;
+  text-align: center;
+  margin: 0 200px;
+  line-height: 1.5;
+  margin-bottom: 100px;
+}
+
+.specialties-cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 0;
+}
+
+.specialty-card-image {
+  background-size: cover;
+}
+
+.specialty-card {
+  background-color: black;
+  color: white;
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.specialty-card-title {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.specialty-card-content p {
+  font-size: 18px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+.specialty-card-price {
+  font-size: 30px;
+  margin-bottom: 16px;
+  color: #fdb44b;
+}
+
+/* Reviews */
+.reviews-container {
+  margin: 0 150px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.review-description p {
+  font-size: 20px;
+  text-align: center;
+  line-height: 1.5;
+  color: #4b4b4b;
+  margin-bottom: 10px;
+}
+
+.review-person {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-person img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.review-person span {
+  font-size: 20px;
+}
+
+/* Gallery */
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 50px 0;
+}
+
+.column1 {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 300px 400px;
+}
+
+.row11 {
+  width: 100%;
+}
+
+.row11 img {
+  width: 100%;
+}
+
+.row12 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.feature-menu-container {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.feature-menu {
+  padding: 30px;
+}
+
+.feature-menu-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.feature-menu-content {
+  margin-bottom: 40px;
+}
+
+.feature-menu-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #999999;
+  margin-bottom: 20px;
+}
+
+.feature-menu-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30%;
+}
+
+.feature-menu-btn button a {
+  text-decoration: none;
+  color: #fdb44b;
+  background-color: black;
+  border: 2px solid #fdb44b;
+  font-size: 20px;
+  padding: 10px 16px;
+}
+
+.feature-menu-btn button a:hover {
+  cursor: pointer;
+  color: white;
+  border-color: #fec97d;
+  background-color: #fec97d;
+}
+
+.row12-image img {
+  width: 100%;
+  height: 400px;
+}
+
+.column2 {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 400px 300px;
+}
+
+.row21 {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.masterchef-container {
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.masterchef {
+  padding: 30px;
+}
+
+.masterchef-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.masterchef-content {
+  margin-bottom: 40px;
+}
+
+.masterchef-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #999999;
+  margin-bottom: 20px;
+}
+
+.masterchef-btn button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 25%;
+}
+
+.masterchef-btn button a {
+  text-decoration: none;
+  color: #fdb44b;
+  background-color: black;
+  border: 2px solid #fdb44b;
+  font-size: 20px;
+  padding: 10px 16px;
+}
+
+.masterchef-btn button a:hover {
+  cursor: pointer;
+  color: white;
+  border-color: #fec97d;
+  background-color: #fec97d;
+}
+
+.row21-image img {
+  width: 100%;
+}
+
+.row22 {
+  width: 100%;
+}
+
+.row22 img {
+  width: 100%;
+  height: 300px;
+}
+
+/* Footer */
+.footer-container {
+  padding: 50px 150px 20px 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #eaf4f4;
+}
+
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  background-color: #eaf4f4;
+  gap: 50px;
+}
+
+.footer-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 30px;
+  line-height: 1.2;
+}
+
+.footer-title p {
+  margin: 0;
+}
+
+.aboutme-footer p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #888a8e;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.working-hours {
+  font-size: 18px;
+  color: #a99e9c;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.quick-links-tabs ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.quick-links-tab a {
+  font-size: 18px;
+  color: #f9965c;
+  text-decoration: none;
+}
+
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+
+.subscribe-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #888a8e;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.subscribe-email {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#subscribe {
+  padding: 10px;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 0 !important;
+  padding-right: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+#send-email {
+  background-color: #fdb44b;
+  border-color: #fdb44b;
+  color: white;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.675rem 1.2rem;
+}
+
+#send-email:hover {
+  background-color: #fec97d;
+  border-color: #fec97d;
+}
+
+.contacts-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.contact-info {
+  font-size: 18px;
+  color: #888a8e;
+  text-decoration: none;
+}
+
+.contact-info a {
+  text-decoration: none;
+}
+
+.contact-info a span {
+  font-size: 16px;
+  color: #888a8e;
+  text-decoration: none;
+}
+
+#phone {
+  font-size: 22px;
+}
+
+.copyright {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0;
+  font-size: 16px;
+  color: #888a8e;
+}
+
+/* Responsive design */
+@media screen and (max-width: 1200px) {
+  .navbar {
+    padding: 0 100px;
+  }
+
+  .qualities-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .specialties-description {
+    margin: 0 100px 30px 100px;
+  }
+
+  .specialties-cards-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .card-5 {
+    order: 5;
+  }
+
+  .card-6 {
+    order: 5;
+  }
+
+  .card-7 {
+    order: 8;
+  }
+
+  .card-8 {
+    order: 7;
+  }
+
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  .row21 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .row11 img {
+    order: 1;
+  }
+
+  .row12 .feature-menu-container {
+    order: 2;
+  }
+
+  .row12-image {
+    order: 3;
+  }
+
+  .row21 .masterchef-container {
+    order: 5;
+  }
+
+  .row21-image {
+    order: 4;
+  }
+
+  .row22 {
+    order: 5;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .tabs {
+    display: none;
+  }
+
+  .burger-btn {
+    display: block;
+    margin-left: 55%;
+    margin-right: 20px;
+  }
+
+  .burger-btn:hover {
+    cursor: pointer;
+  }
+
+  .burger-btn img {
+    width: 40px;
+  }
+
+  .row21 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0 70px;
+  }
+
+  .burger-btn {
+    margin-left: 50%;
+  }
+
+  .qualities-container {
+    margin: 0 70px;
+  }
+
+  .specialties-description {
+    margin: 0 70px 30px 70px;
+  }
+
+  .specialties-cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-1 {
+    order: 1;
+  }
+
+  .card-2 {
+    order: 2;
+  }
+
+  .card-3 {
+    order: 4;
+  }
+
+  .card-4 {
+    order: 3;
+  }
+
+  .card-5 {
+    order: 5;
+  }
+
+  .card-6 {
+    order: 6;
+  }
+
+  .card-7 {
+    order: 7;
+  }
+
+  .card-8 {
+    order: 8;
+  }
+
+  .card-9 {
+    order: 10;
+  }
+
+  .card-10 {
+    order: 9;
+  }
+
+  .card-11 {
+    order: 11;
+  }
+
+  .card-12 {
+    order: 12;
+  }
+
+  .reviews-container {
+    margin: 0 70px;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .gallery-container {
+    grid-template-columns: 1fr;
+  }
+
+  .column1 {
+    grid-template-rows: 1fr;
+  }
+
+  .row12 {
+    grid-template-columns: 1fr;
+  }
+
+  .column2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 1400px;
+  }
+
+  .row21 {
+    grid-template-columns: 1fr;
+  }
+
+  .row22 {
+    display: grid;
+    grid-template-rows: 1fr;
+    height: 400px;
+  }
+
+  .row11 img {
+    order: 1;
+  }
+
+  .row12 .feature-menu-container {
+    order: 2;
+  }
+
+  .row12-image {
+    order: 3;
+  }
+
+  .row21 .masterchef-container {
+    order: 4;
+  }
+
+  .row21-image {
+    order: 5;
+  }
+
+  .row22 {
+    order: 6;
+  }
+
+  .footer-container {
+    padding: 50px 70px 20px 70px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .burger-btn {
+    margin-left: 30%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    padding: 0 30px;
+  }
+
+  .main-page-description h1 {
+    font-size: 40px;
+  }
+  .qualities-container {
+    margin: 0 30px;
+  }
+
+  .specialties-description {
+    margin: 0 30px 30px 30px;
+  }
+
+  .column2 {
+    height: 1100px;
+  }
+
+  .reviews-container {
+    margin: 0 30px;
+  }
+
+  .footer-container {
+    padding: 50px 30px 20px 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .qualities-container {
+    grid-template-columns: 1fr;
+    margin: 0 10px;
+  }
+
+  .specialties-description {
+    margin: 0 10px 30px 10px;
+  }
+
+  .reviews-container {
+    margin: 0 10px;
+  }
+}
