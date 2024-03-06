@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+body {
+  font-family: Georgia, serif;
+}
+
 h1,
 h2,
 h3,
@@ -85,12 +89,14 @@ h4 {
 .main-page-description h1 {
   font-size: 60px;
   margin-bottom: 5px;
+  font-family: "Brush Script MT", cursive;
 }
 
 .main-page-description h3 {
   font-size: 25px;
-  margin-top: 5px;
+  margin: 10px 100px;
   line-height: 1.8;
+  font-family: "Courier New", monospace;
 }
 
 /* Restaurant History */

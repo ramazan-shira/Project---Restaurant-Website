@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Taste It - Menu</title>
     <link rel="stylesheet" href="menu.css" />
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <!-- Navigation bar -->
@@ -13,9 +14,9 @@
         <img src="logo.png" alt="Restaurant Logo" id="logo" />
       </div>
       <div class="tabs">
-        <div class="tab"><a href="restaurant.html">Home</a></div>
+        <div class="tab"><a href="index.html">Home</a></div>
         <div class="tab"><a href="/about.html">About</a></div>
-        <div class="tab"><a href="/restaurant.html">Service</a></div>
+        <div class="tab"><a href="/about.html#choose-us">Service</a></div>
         <div class="tab"><a href="#menu">Menu</a></div>
         <div class="tab"><a href="#book">Book</a></div>
         <div class="tab"><a href="/contact.html">Contact</a></div>
@@ -44,215 +45,218 @@
     <!-- End of Main Page -->
 
     <!-- Menu -->
-    <div class="menu-container" id="menu">
-      <div class="menu-title">
-        <h2>Menu---------</h2>
-        <h1>Check Our Tasty Menu</h1>
-      </div>
-      <div class="menu-panel">
-        <div class="menu-panel-item">All</div>
-        <div class="menu-panel-item">Starters</div>
-        <div class="menu-panel-item">Salads</div>
-        <div
-          class="menu-panel-item filter-specialty"
-          data-filter=".filter-specialty"
-        >
-          Specialty
+    <div class="menu">
+      <div class="menu-container" id="menu">
+        <div class="menu-title">
+          <h2>Menu---------</h2>
+          <h1>Check Our Tasty Menu</h1>
         </div>
-        <div class="menu-panel-item">Wine</div>
-        <div class="menu-panel-item">Dessert</div>
-      </div>
-
-      <div class="menu-items">
-        <div class="menu-items-colum1">
-          <div class="menu-item filter-specialty">
-            <div class="menu-item-image">
-              <img
-                src="https://saltedmint.com/wp-content/uploads/2024/01/Vegetable-Spring-Rolls-4.jpg"
-                alt="Spring Rolls Image"
-              />
-            </div>
-            <div class="menu-item-content">
-              <div class="menu-item-name">
-                <div class="item-name"><p>Spring Rolls</p></div>
-                <div class="item-price">$5.4</div>
-              </div>
-              <div class="menu-item-ingredients">
-                <p><i>Noodles, tofu, veggies, and fresh herbs</i></p>
-              </div>
-            </div>
+        <div class="menu-panel">
+          <div class="menu-panel-item">All</div>
+          <div class="menu-panel-item">Starters</div>
+          <div class="menu-panel-item">Salads</div>
+          <div
+            class="menu-panel-item filter-specialty"
+            data-filter=".filter-specialty"
+          >
+            Specialty
           </div>
+          <div class="menu-panel-item">Wine</div>
+          <div class="menu-panel-item">Dessert</div>
+        </div>
 
-          <div class="menu-item">
-            <div class="menu-item-image">
-              <img
-                src="https://lindseyeatsla.com/wp-content/uploads/2020/07/Lindseyeatsla_Cherry_Bruscetta-8.jpg"
-                alt="Tomato Bruschetta Image"
-              />
-            </div>
-            <div class="menu-item-content">
-              <div class="menu-item-name">
-                <div class="item-name"><p>Tomato Bruschetta</p></div>
-                <div class="item-price">$4.8</div>
+        <div class="menu-items">
+          <div class="menu-items-colum1">
+            <div class="menu-item filter-specialty">
+              <div class="menu-item-image">
+                <img
+                  src="https://saltedmint.com/wp-content/uploads/2024/01/Vegetable-Spring-Rolls-4.jpg"
+                  alt="Spring Rolls Image"
+                />
               </div>
-              <div class="menu-item-ingredients">
-                <p>
-                  <i
-                    >Balsamic vinegar, red onion, olive oil, tomatoes, fresh
-                    basil</i
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="menu-item">
-            <div class="menu-item-image">
-              <img
-                src="https://heartbeetkitchen.com/foodblog/wp-content/uploads/2022/06/ultimate-grilled-chicken-caesar-salad.jpg"
-                alt="Caesar Salad Image"
-              />
-            </div>
-            <div class="menu-item-content">
-              <div class="menu-item-name">
-                <div class="item-name"><p>Caesar Salad</p></div>
-                <div class="item-price">$6.5</div>
-              </div>
-              <div class="menu-item-ingredients">
-                <p>
-                  <i>Lemon juice, garlic & parmesan, anchovy, mayonnaise</i>
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="menu-item">
-            <div class="menu-item-image">
-              <img
-                src="https://img.freepik.com/premium-photo/ruccola-salad-with-cherry-tomatoes-physalis-parmesan-cheese-shavings_341862-15737.jpg"
-                alt="Rucola Salad Image"
-              />
-            </div>
-            <div class="menu-item-content">
-              <div class="menu-item-name">
-                <div class="item-name"><p>Rucola Salad</p></div>
-                <div class="item-price">$6.2</div>
-              </div>
-              <div class="menu-item-ingredients">
-                <p>
-                  <i
-                    >Rucola, sliced almonds, dried cranberries, shaved
-                    parmesan</i
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="menu-item">
-            <div class="menu-item-image">
-              <img
-                src="https://www.thespruceeats.com/thmb/EpiRATC9GUlJ9qf-CeNw3bIVLpU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/grilled-salmon-dill-18-gt-56a8ba8f5f9b58b7d0f4a3f5.jpg"
-                alt="Grilled Salmon with Dill Sauce Image"
-              />
-            </div>
-            <div class="menu-item-content">
-              <div class="menu-item-name">
-                <div class="item-name">
-                  <p>Grilled Salmon with Dill Sauce</p>
+              <div class="menu-item-content">
+                <div class="menu-item-name">
+                  <div class="item-name"><p>Spring Rolls</p></div>
+                  <div class="item-price">$5.4</div>
                 </div>
-                <div class="item-price">$12.5</div>
+                <div class="menu-item-ingredients">
+                  <p><i>Noodles, tofu, veggies, and fresh herbs</i></p>
+                </div>
               </div>
-              <div class="menu-item-ingredients">
-                <p>
-                  <i
-                    >Sour cream, fresh salmon, honey, dijon mustard, dried
-                    dill</i
-                  >
-                </p>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img
+                  src="https://lindseyeatsla.com/wp-content/uploads/2020/07/Lindseyeatsla_Cherry_Bruscetta-8.jpg"
+                  alt="Tomato Bruschetta Image"
+                />
+              </div>
+              <div class="menu-item-content">
+                <div class="menu-item-name">
+                  <div class="item-name"><p>Tomato Bruschetta</p></div>
+                  <div class="item-price">$4.8</div>
+                </div>
+                <div class="menu-item-ingredients">
+                  <p>
+                    <i
+                      >Balsamic vinegar, red onion, olive oil, tomatoes, fresh
+                      basil</i
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img
+                  src="https://heartbeetkitchen.com/foodblog/wp-content/uploads/2022/06/ultimate-grilled-chicken-caesar-salad.jpg"
+                  alt="Caesar Salad Image"
+                />
+              </div>
+              <div class="menu-item-content">
+                <div class="menu-item-name">
+                  <div class="item-name"><p>Caesar Salad</p></div>
+                  <div class="item-price">$6.5</div>
+                </div>
+                <div class="menu-item-ingredients">
+                  <p>
+                    <i>Lemon juice, garlic & parmesan, anchovy, mayonnaise</i>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img
+                  src="https://img.freepik.com/premium-photo/ruccola-salad-with-cherry-tomatoes-physalis-parmesan-cheese-shavings_341862-15737.jpg"
+                  alt="Rucola Salad Image"
+                />
+              </div>
+              <div class="menu-item-content">
+                <div class="menu-item-name">
+                  <div class="item-name"><p>Rucola Salad</p></div>
+                  <div class="item-price">$6.2</div>
+                </div>
+                <div class="menu-item-ingredients">
+                  <p>
+                    <i
+                      >Rucola, sliced almonds, dried cranberries, shaved
+                      parmesan</i
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img
+                  src="https://www.thespruceeats.com/thmb/EpiRATC9GUlJ9qf-CeNw3bIVLpU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/grilled-salmon-dill-18-gt-56a8ba8f5f9b58b7d0f4a3f5.jpg"
+                  alt="Grilled Salmon with Dill Sauce Image"
+                />
+              </div>
+              <div class="menu-item-content">
+                <div class="menu-item-name">
+                  <div class="item-name">
+                    <p>Grilled Salmon with Dill Sauce</p>
+                  </div>
+                  <div class="item-price">$12.5</div>
+                </div>
+                <div class="menu-item-ingredients">
+                  <p>
+                    <i
+                      >Sour cream, fresh salmon, honey, dijon mustard, dried
+                      dill</i
+                    >
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="menu-items-colum2">
-          <div class="menu-item">
-            <div class="menu-item-image">
-              <img
-                src="https://data.thefeedfeed.com/static/2019/06/03/15595775965cf543fc9561a.png"
-                alt="Roast Beef with Vegetables Image"
-              />
-            </div>
-            <div class="menu-item-content">
-              <div class="menu-item-name">
-                <div class="item-name"><p>Roast Beef with Vegetables</p></div>
-                <div class="item-price">$15.2</div>
+          <div class="menu-items-colum2">
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img
+                  src="https://data.thefeedfeed.com/static/2019/06/03/15595775965cf543fc9561a.png"
+                  alt="Roast Beef with Vegetables Image"
+                />
               </div>
-              <div class="menu-item-ingredients">
-                <p>
-                  <i
-                    >Green beans, rib eye, olive oil, beef stock, plain flour</i
-                  >
-                </p>
+              <div class="menu-item-content">
+                <div class="menu-item-name">
+                  <div class="item-name"><p>Roast Beef with Vegetables</p></div>
+                  <div class="item-price">$15.2</div>
+                </div>
+                <div class="menu-item-ingredients">
+                  <p>
+                    <i
+                      >Green beans, rib eye, olive oil, beef stock, plain
+                      flour</i
+                    >
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="menu-item">
-            <div class="menu-item-image">
-              <img
-                src="https://sugarspunrun.com/wp-content/uploads/2022/05/Blueberry-Cheesecake-Recipe-1-of-1-22.jpg"
-                alt="Blueberry Cheesecake Image"
-              />
-            </div>
-            <div class="menu-item-content">
-              <div class="menu-item-name">
-                <div class="item-name"><p>Blueberry Cheesecake</p></div>
-                <div class="item-price">$7.6</div>
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img
+                  src="https://sugarspunrun.com/wp-content/uploads/2022/05/Blueberry-Cheesecake-Recipe-1-of-1-22.jpg"
+                  alt="Blueberry Cheesecake Image"
+                />
               </div>
-              <div class="menu-item-ingredients">
-                <p>
-                  <i
-                    >Sour cream, frozen blueberries, blueberry jelly, graham
-                    cracker crumbs</i
-                  >
-                </p>
+              <div class="menu-item-content">
+                <div class="menu-item-name">
+                  <div class="item-name"><p>Blueberry Cheesecake</p></div>
+                  <div class="item-price">$7.6</div>
+                </div>
+                <div class="menu-item-ingredients">
+                  <p>
+                    <i
+                      >Sour cream, frozen blueberries, blueberry jelly, graham
+                      cracker crumbs</i
+                    >
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="menu-item">
-            <div class="menu-item-image">
-              <img
-                src="https://d12mme3izkh884.cloudfront.net/product-media/2IU/511/768/Santa-Lucia-Sauvignon-Blanc-2021.jpg"
-                alt=" Sauvignon Blanc Image"
-              />
-            </div>
-            <div class="menu-item-content">
-              <div class="menu-item-name">
-                <div class="item-name"><p>Sauvignon Blanc</p></div>
-                <div class="item-price">$21.5</div>
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img
+                  src="https://d12mme3izkh884.cloudfront.net/product-media/2IU/511/768/Santa-Lucia-Sauvignon-Blanc-2021.jpg"
+                  alt=" Sauvignon Blanc Image"
+                />
               </div>
-              <div class="menu-item-ingredients">
-                <p><i>White Wine</i></p>
+              <div class="menu-item-content">
+                <div class="menu-item-name">
+                  <div class="item-name"><p>Sauvignon Blanc</p></div>
+                  <div class="item-price">$21.5</div>
+                </div>
+                <div class="menu-item-ingredients">
+                  <p><i>White Wine</i></p>
+                </div>
               </div>
             </div>
-          </div>
 
-          <div class="menu-item">
-            <div class="menu-item-image">
-              <img
-                src="https://s3.ap-southeast-1.amazonaws.com/saleor.lizard/products/JC_classic_carbenet_5aabd31e.png"
-                alt="Carbenet Franc Image"
-              />
-            </div>
-            <div class="menu-item-content">
-              <div class="menu-item-name">
-                <div class="item-name"><p>Carbenet Franc</p></div>
-                <div class="item-price">$25.5</div>
+            <div class="menu-item">
+              <div class="menu-item-image">
+                <img
+                  src="https://s3.ap-southeast-1.amazonaws.com/saleor.lizard/products/JC_classic_carbenet_5aabd31e.png"
+                  alt="Carbenet Franc Image"
+                />
               </div>
-              <div class="menu-item-ingredients">
-                <p><i>Red Wine</i></p>
+              <div class="menu-item-content">
+                <div class="menu-item-name">
+                  <div class="item-name"><p>Carbenet Franc</p></div>
+                  <div class="item-price">$25.5</div>
+                </div>
+                <div class="menu-item-ingredients">
+                  <p><i>Red Wine</i></p>
+                </div>
               </div>
             </div>
           </div>
@@ -371,7 +375,9 @@
               <li class="quick-links-tab">
                 <a href="#">Privacy and Policy</a>
               </li>
-              <li class="quick-links-tab"><a href="#">Get in Touch</a></li>
+              <li class="quick-links-tab">
+                <a href="/contact.html">Get in Touch</a>
+              </li>
               <li class="quick-links-tab"><a href="#">Testimonial</a></li>
             </ul>
           </div>
@@ -411,7 +417,7 @@
         </div>
       </div>
       <div class="copyright">
-        <p>Copyright &#169;2024 All rights reserved</p>
+        <p>Copyright &#169;2024 All rights reserved | Ramazan Shira</p>
       </div>
     </div>
     <!-- End of Footer -->

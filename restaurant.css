@@ -2,6 +2,10 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: Georgia, serif;
+}
 /* Navigation bar style */
 .navbar {
   width: 100%;
@@ -78,11 +82,13 @@
 .main-page-description h1 {
   font-size: 60px;
   margin-bottom: 20px;
+  font-family: "Brush Script MT", cursive;
 }
 
 .main-page-description h3 {
   font-size: 25px;
   margin-top: 5px;
+  font-family: "Courier New", monospace;
 }
 
 /* Qualities */
@@ -603,8 +609,12 @@
     order: 5;
   }
 
+  .footer-container {
+    padding: 50px 100px 20px 100px;
+  }
+
   .footer {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 }
 
@@ -629,6 +639,9 @@
 
   .row21 {
     grid-template-columns: 1fr 1fr;
+  }
+  .footer {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -771,6 +784,10 @@
 @media screen and (max-width: 600px) {
   .burger-btn {
     margin-left: 30%;
+  }
+
+  .qualities-container {
+    grid-template-columns: 1fr;
   }
 }
 

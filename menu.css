@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: Georgia, serif;
+}
+
 /* Navigation bar style */
 .navbar {
   width: 100%;
@@ -79,6 +84,7 @@
 .main-page-description h1 {
   font-size: 60px;
   margin-bottom: 20px;
+  font-family: Copperplate, Papyrus, fantasy;
 }
 
 .main-page-description h1 span {
@@ -88,6 +94,7 @@
 .main-page-description h3 {
   font-size: 30px;
   margin-top: 5px;
+  font-family: Geneva, Verdana, sans-serif;
 }
 
 .main-page-buttons {
@@ -123,13 +130,17 @@
 }
 
 /* Menu */
+
+.menu {
+  background-color: #eaf4f4;
+}
 .menu-container {
   margin: 0 150px;
   padding: 70px 0;
 }
 
 .menu-title h2 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   padding: 0;
   line-height: 1px;
@@ -250,9 +261,6 @@
 }
 
 /* Reservation */
-.reservation-container {
-  background-color: #eaf4f4;
-}
 
 .reservation {
   margin: 0 150px;
@@ -489,8 +497,16 @@ form textarea {
     padding: 0 100px;
   }
 
+  .menu-container {
+    margin: 0 100px;
+  }
+
+  .footer-container {
+    padding: 50px 100px 20px 100px;
+  }
+
   .footer {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 }
 
@@ -622,6 +638,14 @@ form textarea {
 @media screen and (max-width: 450px) {
   .navbar {
     padding: 0 10px;
+  }
+
+  .main-page-description h1 {
+    font-size: 30px;
+  }
+
+  .main-page-description h3 {
+    font-size: 18px;
   }
 
   .menu-container {
